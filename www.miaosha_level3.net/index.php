@@ -11,9 +11,9 @@ header("Access-Control-Allow-Origin: http://www.miaosha_level2.net"); //防止 �
 $data = array('msg'=>'false');// 初始数据准备
 
 //2 库文件引入
-include_once 'lib/Mrgister.class.php';
-include_once 'lib/Mredis.class.php';
-include_once 'lib/function.php';
+include_once 'lib/Mrgister.class.php';//数据接口文件
+include_once 'lib/Mredis.class.php';//nosql缓存处理文件
+include_once 'lib/function.php';//通用函数库文件
 
 //3 整理数据 获取前台数据输入
 $I = new Mrgister();
